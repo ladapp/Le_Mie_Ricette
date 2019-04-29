@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+   <a (click)="home()"><ion-icon name="arrow-back" style="position:absolute; top:20px; font-size:20px"></ion-icon></a>
+    <ion-title style="color:#ff0000; text-align: center">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <input type="email" placeholder="Email" style="position:absolute; top:100px; left:70px"> <br>
+    <input type="password" placeholder="Password" style="position:absolute; top:140px; left:70px"><br>
+    <ion-button color="danger" class="button-accedi" >Accedi </ion-button> <br>
+    <label style="position:absolute; top:230px; left:120px; font-size:12px;"> Non hai un account?? </label>
+    <ion-button color="danger" class="button-register" (click)="registrati()">Registrati</ion-button>
+  
+</ion-content>

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\login",
+    "\\src\\app\\register",
+    "\\src\\theme"
+  ],
+  "SelectedNode": "\\src\\app\\register\\register.page.scss",
+  "PreviewInSolutionExplorer": false
+}
