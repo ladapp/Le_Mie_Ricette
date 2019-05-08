@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title style="text-align: center"> Le ricette dal mio frigo </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-card-header>
+        <ion-img src="../assets/images/carbonara.jpg" style="width: 312px; height: auto;"></ion-img>
+    </ion-card-header>
+
+  <div style="text-align: center">
+    
+  </div> <br>      
+  
+    <ion-slides [options]="sliderConfig" scrollbar="true" page="true"> 
+      <ion-slide>
+          <a (click)="dettaglio()"><ion-card>
+              <ion-card-header>
+                  <ion-img src="../assets/carbonara.jpg" style="width: 200px; height: auto;"></ion-img>
+               </ion-card-header>
+        </a> <br>
+            <div style="text-align: center">
+            </div> 
+      </ion-slide>
+      <ion-slide>
+          <ion-card>
+              <ion-card-header>
+                  <ion-img src="../assets/pollo-fritto-ricetta.jpg" style="width: 200px; height: auto;"></ion-img>
+                <ion-card-subtitle>Secondo</ion-card-subtitle>
+                <ion-card-title>Pollo fritto</ion-card-title>
+              </ion-card-header>
+            </ion-card> <br>
+            <div style="text-align: center">
+            </div> 
+      </ion-slide>
+      <ion-slide>
+          <ion-card>
+              <ion-card-header>
+                  <ion-img src="../assets/insalata.jpg" style="width: 200px; height: auto;"></ion-img>
+                <ion-card-subtitle>Contorno</ion-card-subtitle>
+                <ion-card-title>Insalata</ion-card-title>
+              </ion-card-header>
+            </ion-card> <br>
+            <div style="text-align: center">
+            </div> 
+      </ion-slide>
+    </ion-slides>
+  
+</ion-content>
