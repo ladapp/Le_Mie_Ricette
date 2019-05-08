@@ -12,7 +12,6 @@ const routes: Routes = [
   { path: 'dettaglio', loadChildren: './dettaglio/dettaglio.module#DettaglioPageModule' },
   { path: 'strumenti', loadChildren: './strumenti/strumenti.module#StrumentiPageModule' },
   { path: 'cerca', loadChildren: './cerca/cerca.module#CercaPageModule' },
-  { path: 'footer', loadChildren: './footer/footer.module#FooterPageModule' }
   
 ];
 
