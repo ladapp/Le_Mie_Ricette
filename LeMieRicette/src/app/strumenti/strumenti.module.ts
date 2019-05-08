@@ -6,6 +6,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { StrumentiPage } from './strumenti.page';
+import { CalcolatriceModalPage } from '../calcolatrice-modal/calcolatrice-modal.page';
+import { TimerModalPage } from '../timer-modal/timer-modal.page';
+import { ConvertitoreModalPage } from '../convertitore-modal/convertitore-modal.page';
 
 const routes: Routes = [
   {
@@ -21,6 +24,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [StrumentiPage]
+  declarations: [StrumentiPage, CalcolatriceModalPage, TimerModalPage, ConvertitoreModalPage],
+  entryComponents: [CalcolatriceModalPage, TimerModalPage, ConvertitoreModalPage]
 })
 export class StrumentiPageModule {}

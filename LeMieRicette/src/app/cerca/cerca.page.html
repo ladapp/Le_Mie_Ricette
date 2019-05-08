@@ -1,11 +1,36 @@
 <ion-header>
     <ion-toolbar>
      <a (click)="home()"><ion-icon name="arrow-back" style="position:absolute; top:20px; font-size:20px"></ion-icon></a>
-      <ion-title style="color:#ff0000; text-align: center">Cerca</ion-title><br>
+      <ion-title style="color:#ff0000; text-align: center;">Cerca</ion-title><br>
       <ion-searchbar></ion-searchbar>
     </ion-toolbar>
   </ion-header>
   
 <ion-content>
+<div class="filtro">
+
+  <ion-button color="danger" class="anti">Antipasti</ion-button>
+  <ion-button color="danger" class="primi">Primi</ion-button>
+  <ion-button color="danger" class="secondi">Secondi</ion-button>
+  <ion-button color="danger" class="contorni">Contorni</ion-button>
+  <ion-button color="danger" class="dolci">Dolci</ion-button>
+</div>
+
+<ion-card class="card">
+    <ion-card-header>
+        <ion-img src="../assets/images/carbonara.jpg"></ion-img>
+      <ion-card-subtitle class="giorno">Primo</ion-card-subtitle>
+      <ion-card-title>Carbonara</ion-card-title>
+    </ion-card-header>
+  </ion-card> <br>
+
+  <ion-card class="card1">
+      <ion-card-header>
+          <ion-img src="../assets/images/carbonara.jpg"></ion-img>
+        <ion-card-subtitle class="giorno">Primo</ion-card-subtitle>
+        <ion-card-title>Carbonara</ion-card-title>
+      </ion-card-header>
+    </ion-card> <br>
+
 
 </ion-content>
