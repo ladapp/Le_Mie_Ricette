@@ -1,0 +1,45 @@
+.info{
+    margin-left: 10px;
+}
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.instagram-icon {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.facebook-icon{
+    font-size: 18px;
+    color: #4267b2;
+}
+.twitter-icon{
+    font-size: 18px;
+    color: #1c9deb;
+}
+#instagram{
+    background-image: linear-gradient(to top right, #fad901 0%, #9300ff 100%);
+    border-radius: 5px;
+}
+.social{
+    width: 18px;
+    height: 18px;
+    float: left;
+}
+#version{
+    font-size: 15px;
+    margin-top: 30px;
+}
+.title{
+    color: #ff0000;
+    font-size: 20px;
+}
+.menu{
+    color: #000;
+}
