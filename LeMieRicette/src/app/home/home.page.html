@@ -1,16 +1,16 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-menu-button class="menu"></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+    <ion-title class="title">
       Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <a (click)="dettaglio()">
     <ion-card>
       <ion-card-header>
         <ion-img src="../assets/images/carbonara.jpg" style="width: 312px; height: auto;"></ion-img>
@@ -18,34 +18,36 @@
         <ion-card-title>Carbonara</ion-card-title>
       </ion-card-header>
     </ion-card> 
+  </a>
     
-    <br>
+  <br>
 
-    <div style="text-align: center">
-      <label class="base">Le nostre ricette base</label>
-    </div> 
+  <div style="text-align: center">
+    <label class="base">Le nostre ricette base</label>
+  </div> 
     
-    <br>      
+  <br>      
       
-    <ion-slides [options]="sliderConfig" scrollbar="true" page="true"> 
-      <ion-slide>
-        <a (click)="dettaglio()">
-          <ion-card>
-            <ion-card-header>
-              <ion-img src="../assets/images/carbonara.jpg" style="width: 200px; height: auto;"></ion-img>
-              <ion-card-subtitle>Primo</ion-card-subtitle>
-              <ion-card-title>Carbonara</ion-card-title>
-            </ion-card-header>
-          </ion-card>
-        </a> 
+  <ion-slides [options]="sliderConfig" scrollbar="true" page="true"> 
+    <ion-slide>
+      <a (click)="dettaglio()">
+        <ion-card>
+          <ion-card-header>
+            <ion-img src="../assets/images/carbonara.jpg" style="width: 200px; height: auto;"></ion-img>
+            <ion-card-subtitle>Primo</ion-card-subtitle>
+            <ion-card-title>Carbonara</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </a> 
         
-        <br>
+      <br>
 
-        <div style="text-align: center">
-        </div> 
-      </ion-slide>
+      <div style="text-align: center">
+      </div> 
+    </ion-slide>
 
-      <ion-slide>
+    <ion-slide>
+      <a (click)="dettaglio()">
         <ion-card>
           <ion-card-header>
             <ion-img src="../assets/images/pollo.jpg" style="width: 200px; height: auto;"></ion-img>
@@ -53,28 +55,31 @@
             <ion-card-title>Pollo</ion-card-title>
           </ion-card-header>
         </ion-card> 
+      </a>
 
-        <br>
+      <br>
 
-        <div style="text-align: center">
-        </div> 
-      </ion-slide>
+      <div style="text-align: center">
+      </div> 
+    </ion-slide>
 
-      <ion-slide>
+    <ion-slide>
+      <a (click)="dettaglio()">
         <ion-card>
           <ion-card-header>
             <ion-img src="../assets/images/insalata.jpg" style="width: 200px; height: auto;"></ion-img>
-              <ion-card-subtitle>Contorno</ion-card-subtitle>
-                <ion-card-title>Insalata</ion-card-title>
+            <ion-card-subtitle>Contorno</ion-card-subtitle>
+            <ion-card-title>Insalata</ion-card-title>
           </ion-card-header>
         </ion-card> 
+      </a>
         
-        <br>
+      <br>
 
-        <div style="text-align: center">
-        </div> 
-      </ion-slide>
-    </ion-slides>
+      <div style="text-align: center">
+      </div> 
+    </ion-slide>
+  </ion-slides>
 </ion-content>
 
 <ion-footer>
