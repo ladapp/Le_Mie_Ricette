@@ -1,14 +1,42 @@
 .button-register {
-    position:absolute;
-    top:250px; 
-    left:130px; 
+    position:relative;
+    top:110px; 
+    display: block;
+    margin: 0 auto;
     width:100px; 
     height:25px;
 }
 
 .button-accedi {
-    position: absolute;
-    top: 180px;
-    left: 70px;
+    position: relative;
+    top: 110px;
+    display: block;
+    margin: 0 auto;
     width: 220px;
+}
+
+.email{
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    position:relative;
+    top: 90px;
+
+}
+
+.password{
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    position:relative;
+    top: 90px;
+}
+
+.error_messages{
+    font-size: 0.7em;
+    color:red;
+    text-align:center;
+    position:relative;
+    top:80px;
+    
 }

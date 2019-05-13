@@ -10,7 +10,7 @@
         <ion-list>
           <ion-item>
             <ion-icon name="contact"></ion-icon>
-            <label (click)="profilo()"> &nbsp; Profilo</label>
+            <label (click)="profilo()"> &nbsp;  {{ 'Profilo' | translate }}</label>
           </ion-item>
           <ion-item>
             <ion-icon name="key"></ion-icon>
@@ -22,11 +22,9 @@
           </ion-item>
           <ion-item>
               <ion-icon name="flag"></ion-icon>
-              <ion-label> &nbsp; Lingua</ion-label>
-                <ion-select placeholder="Seleziona">
-                  <ion-select-option value="it">Italiano</ion-select-option>
-                  <ion-select-option value="en">Inglese</ion-select-option>
-                </ion-select>
+              <ion-label> &nbsp;{{ 'Lingua' | translate }}</ion-label>
+              <button (click)="switchLanguage('it')" class="lang" >it</button>
+              <button (click)="switchLanguage('en')" class="lang">en</button>
           </ion-item>
         </ion-list>
       </ion-content>

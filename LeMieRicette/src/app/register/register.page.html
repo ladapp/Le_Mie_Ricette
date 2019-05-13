@@ -1,13 +1,51 @@
 <ion-header>
     <ion-toolbar>
-        <a (click)="login()"><ion-icon name="arrow-back" style="position:absolute; top:10px; font-size:20px; "></ion-icon></a>
+        <a (click)="back()"><ion-icon name="arrow-back" style="position:absolute; top:10px; font-size:20px; "></ion-icon></a>
         <ion-title style="color:#ff0000; text-align: center">Register</ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <input type="text" placeholder="Nome" style="position:relative; top:100px; left:70px" > <br>
-    <input type="text" placeholder="Cognome" style="position:relative; top:120px; left:70px"> <br>
-    <input type="email" placeholder="Email" style="position:relative; top:140px; left:70px"> <br>
-    <input type="password" placeholder="Password" style="position:relative; top:160px; left:70px"><br>
-    <ion-button color="danger" class="button-register">Registrati</ion-button>
+ <form [formGroup]="registerForm">
+    <input type="text" placeholder="Nome" class="nome"  formControlName="nome"> <br>
+
+    <div class="error_messages">
+            <ng-container *ngFor="let error of error_messages.nome">
+              <div class="error_message" *ngIf="registerForm.get('nome').hasError(error.type) && (registerForm.get('nome').dirty || registerForm.get('nome').touched)">
+               {{error.message}}
+              </div>
+           </ng-container>
+    </div>
+
+    <input type="text" placeholder="Cognome" class="cognome"  formControlName="cognome"> <br>
+
+    <div class="error_messages">
+            <ng-container *ngFor="let error of error_messages.cognome">
+              <div class="error_message" *ngIf="registerForm.get('cognome').hasError(error.type) && (registerForm.get('cognome').dirty || registerForm.get('cognome').touched)">
+               {{error.message}}
+              </div>
+           </ng-container>
+    </div>
+
+    <input type="email" placeholder="Email" class="email"  formControlName="email"> <br>
+
+    <div class="error_messages">
+            <ng-container *ngFor="let error of error_messages.email">
+              <div class="error_message" *ngIf="registerForm.get('email').hasError(error.type) && (registerForm.get('email').dirty || registerForm.get('email').touched)">
+               {{error.message}}
+              </div>
+           </ng-container>
+    </div>
+
+    <input type="password" placeholder="Password" class="password" formControlName="password"><br>
+
+    <div class="error_messages">
+            <ng-container *ngFor="let error of error_messages.password">
+              <div class="error_message" *ngIf="registerForm.get('password').hasError(error.type) && (registerForm.get('password').dirty || registerForm.get('password').touched)">
+               {{error.message}}
+              </div>
+           </ng-container>
+    </div>
+
+    <ion-button color="danger" class="button-register" [disabled]="!registerForm.valid">{{ 'Registrati' | translate }}</ion-button>
+  </form>
 </ion-content>

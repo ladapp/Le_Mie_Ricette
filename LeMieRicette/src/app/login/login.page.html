@@ -1,16 +1,37 @@
 <ion-header>
   <ion-toolbar>
-   <a (click)="home()"><ion-icon name="arrow-back" style="position:absolute; top:20px; font-size:20px"></ion-icon></a>
+   <a (click)="back()"><ion-icon name="arrow-back" style="position:absolute; top:20px; font-size:20px"></ion-icon></a>
     <ion-title style="color:#ff0000; text-align: center">Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form [formGroup]="loginForm">
+   <div>
+     
+    <input type="email" placeholder="Email" class="email"  formControlName="email"> <br>
 
-    <input type="email" placeholder="Email" style="position:absolute; top:100px; left:70px"> <br>
-    <input type="password" placeholder="Password" style="position:absolute; top:140px; left:70px"><br>
-    <ion-button color="danger" class="button-accedi" >Accedi </ion-button> <br>
-    <label style="position:absolute; top:230px; left:120px; font-size:12px;"> Non hai un account?? </label>
-    <ion-button color="danger" class="button-register" (click)="registrati()">Registrati</ion-button>
-  
+     <div class="error_messages">
+       <ng-container *ngFor="let error of error_messages.email">
+         <div class="error_message" *ngIf="loginForm.get('email').hasError(error.type) && (loginForm.get('email').dirty || loginForm.get('email').touched)">
+          {{error.message}}
+         </div>
+      </ng-container>
+     </div>
+    </div>
+
+    <input type="password" placeholder="Password" class="password" formControlName="password"><br>
+
+    <div class="error_messages">
+        <ng-container *ngFor="let error of error_messages.password">
+          <div class="error_message" *ngIf="loginForm.get('password').hasError(error.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+            {{error.message}}
+          </div>
+        </ng-container>
+      </div>
+
+    <ion-button color="danger" class="button-accedi" [disabled]="!loginForm.valid" (click)="login()" >Accedi </ion-button> <br>
+
+    <ion-button color="danger" class="button-register" (click)="registrati()"> {{ 'Registrati' | translate }}</ion-button>
+ </form>
 </ion-content>

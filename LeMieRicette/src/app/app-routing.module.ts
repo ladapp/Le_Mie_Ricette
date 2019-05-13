@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'strumenti', loadChildren: './strumenti/strumenti.module#StrumentiPageModule' },
   { path: 'cerca', loadChildren: './cerca/cerca.module#CercaPageModule' },
   
+  
 ];
 
 @NgModule({
@@ -22,3 +23,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+
+
