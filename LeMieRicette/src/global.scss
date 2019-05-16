@@ -19,8 +19,7 @@
 
 .title{
     color: #ff0000;
-    font-size: 20px;
-    text-align: center
+    font-size: 30px;
 }
 
 .indietro{
@@ -39,4 +38,8 @@
 
 .overscroll{
     --background: #f3f3f3;
+}
+#arrow{
+    margin-left: 5px;
+    font-size: 20px;
 }
