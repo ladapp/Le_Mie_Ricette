@@ -62,4 +62,7 @@ export class AppComponent {
     this.router.navigate(['/info']);
     this.menu.close();
   }
+
+  
+
 }

@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-
+import { IonicSelectableModule } from 'ionic-selectable';
 import { IonicModule } from '@ionic/angular';
 
-import { Lericettedalmiofrigo } from './Lericettedalmiofrigo.page';
+import { Nelmiofrigo1Page } from './nelmiofrigo1.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: Lericettedalmiofrigo
+    component: Nelmiofrigo1Page
   }
 ];
 
@@ -19,8 +19,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    IonicSelectableModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [Lericettedalmiofrigo]
+  declarations: [Nelmiofrigo1Page]
 })
-export class LericettedalmiofrigoModule {}
+export class Nelmiofrigo1PageModule {}

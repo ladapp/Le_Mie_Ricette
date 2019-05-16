@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+      <a (click)="back()"><ion-icon name="arrow-back" class="indietro"></ion-icon></a>
+    <ion-title class="title"> Nel Mio Frigo </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list style="margin-top:5px">
+        <ion-item>
+          <ion-label>Guanciale</ion-label>
+          <ion-badge>X</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-label>Uovo</ion-label>
+            <ion-badge>X</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-label>Pepe</ion-label>
+            <ion-badge>X</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-label>Sale</ion-label>
+            <ion-badge>X</ion-badge>
+        </ion-item>
+    </ion-list><br>
+
+ <form>
+    <ion-item class="ingredienti">
+            <ion-label><strong>Aggiungi Ingredienti</strong></ion-label>
+            <ionic-selectable       
+              [(ngModel)]="port"
+              [items]="ports"
+              [isMultiple]="true"
+              itemValueField="id"
+              itemTextField="name"
+              [canSearch]="true"
+              (onChange)="portChange($event)"
+              required="true">
+            </ionic-selectable>
+    </ion-item>
+
+
+    <div class="centra">
+        <ion-button round outline type="submit" class="aggiungi">Aggiungi ingredienti</ion-button>
+    </div>
+
+ </form>
+
+ <div class="centra">
+    <ion-button round outline type="submit" class="vedi">Vedi le n ricette</ion-button>
+ </div>
+
+
+
+</ion-content>

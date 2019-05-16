@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-icon name="arrow-back" class="indietro"></ion-icon>
+    <ion-title class="title">Aggiungi ricetta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form>
+    
+    
+    <ion-input color="medium" class="image" type="file" ></ion-input>
+    
+   
+   <ion-item class="nome">
+      <ion-label><strong>Nome Ricetta:</strong></ion-label>
+      <ion-input type="text" style="margin-top:50px; " name="nome" required="true"></ion-input>
+    </ion-item><br>
+
+    <ion-item class="persone">
+      <ion-label><strong>Per: </strong></ion-label>
+      <ion-input type="number"  name="persone" max="2" required="true"></ion-input>
+    </ion-item>
+
+    <ion-item class="tempo">
+      <ion-label><strong>Tempo totale (min): </strong></ion-label>
+      <ion-input type="number"  name="tempo" required="true"></ion-input>
+    </ion-item>
+
+    <ion-item class="tipo">
+      <ion-label><strong>Tipo</strong></ion-label>
+      <ion-select placeholder="Seleziona" required="true">
+        <ion-select-option value="anti">Antipasto</ion-select-option>
+        <ion-select-option value="primo">Primo</ion-select-option>
+        <ion-select-option value="secondo">Secondo</ion-select-option>
+        <ion-select-option value="contorno">Contorno</ion-select-option>
+        <ion-select-option value="dolce">Dolce</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    
+    <ion-item class="ingredienti">
+      <ion-label><strong>Ingredienti</strong></ion-label>
+      <ionic-selectable       
+        [(ngModel)]="port"
+        [items]="ports"
+        [isMultiple]="true"
+        itemValueField="id"
+        itemTextField="name"
+        [canSearch]="true"
+        (onChange)="portChange($event)"
+        required="true">
+      </ionic-selectable>
+    </ion-item>
+    
+
+    <ion-item class="step">
+      <ion-label><strong>Steps: </strong></ion-label>
+      <ion-textarea type="text" placeholder="inserisci procedura..." required="true"></ion-textarea>
+    </ion-item>
+
+    
+    <ion-button round type="submit" class="submit">Inserisci</ion-button>
+   
+
+
+</form>
+</ion-content>

@@ -2,19 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+
 import { IonicModule } from '@ionic/angular';
-import {TranslateModule} from '@ngx-translate/core';
-import {ReactiveFormsModule} from '@angular/forms';
 
-
-
-
-import { LoginPage } from './login.page';
+import { RicetteDalMioFrigoPage } from './ricette-dal-mio-frigo.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPage
+    component: RicetteDalMioFrigoPage
   }
 ];
 
@@ -23,10 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    TranslateModule,
-    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [LoginPage]
+  declarations: [RicetteDalMioFrigoPage]
 })
-export class LoginPageModule {}
+export class RicetteDalMioFrigoPageModule {}

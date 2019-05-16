@@ -29,5 +29,27 @@ export class HomePage {
     this.router.navigate(['/dettaglio'])
   }
 
+  
+  //Rotte per la tab-bar
+  mieRicetteTab(){
+    this.router.navigate(['/le-mie-ricette'])
+  }
+
+  homeTab(){
+    this.router.navigate(['/home'])
+  }
+
+  aggiungiTab(){
+    this.router.navigate(['/aggiungi-ricetta'])
+  }
+
+  frigoTab(){
+    this.router.navigate(['/nelmiofrigo1'])
+  }
+
+  strumentiTab(){
+    this.router.navigate(['/strumenti'])
+  }
+
 
 }

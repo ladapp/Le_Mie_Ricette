@@ -1,19 +1,24 @@
 <ion-header>
   <ion-toolbar>
-   <a (click)="home()"><ion-icon name="arrow-back" style="position:absolute; top:20px; font-size:20px"></ion-icon></a>
-    <ion-title style="color:#ff0000; text-align: center">Dettaglio ricetta</ion-title>
+   <a (click)="home()"><ion-icon name="arrow-back" class="indietro"></ion-icon></a>
+    <ion-title class="title">Dettaglio ricetta</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
 <ion-content>
 <div style="background-color:#f3f3f3;">
+
     <ion-img src="../assets/images/carbonara.jpg" ></ion-img>
+
     <label class="nome"><strong>Carbonara</strong></label><br>
-    <label><strong>Per: </strong>2 persone</label> <br> 
-    <label><strong>Tempo: </strong>30 minuti</label> <br> <br>  
+
+    <label class="persone"><strong>Per: </strong>2 persone</label> <br> 
+
+    <label class="tempo"><strong>Tempo: </strong>30 minuti</label> <br> <br>
+
     <span class="ingredienti"><strong>Ingredienti</strong></span><br>
-    <ion-list>
+    <ion-list style="margin-top:5px">
         <ion-item>
           <ion-label>Guanciale</ion-label>
         </ion-item>
@@ -24,18 +29,11 @@
             <ion-label>Pepe</ion-label>
         </ion-item>
     </ion-list><br>
+
+
     <span class="ricetta"><strong>Ricetta</strong></span><br>
-    <ion-list>
-        <ion-item>
-          <ion-label><strong>Step 1</strong><br>getshehrthrhrthrthtrhrth</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label><strong>Step 2</strong><br>getshehrthrhrthrthtrhrth</ion-label>
-        </ion-item>
-        <ion-item>
-            <ion-label><strong>Step 3</strong><br>getshehrthrhrthrthtrhrth</ion-label>
-        </ion-item>
-    </ion-list><br>
+    <textarea readonly class="textarea"></textarea>
+    
     
 </div>
 
