@@ -1,49 +1,60 @@
+#back{
+    font-size: 20px;
+    
+}
+.back{
+    width: 21px;
+    height: 21px;
+    position: fixed;
+}
+.title{
+    color: #ff0000;
+    font-size: 30px;
+  }
+#search{
+    width: 100%;
+}
+#arrow{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
 .filtro{
-    color:red;
-    width:200px;
-    height:200px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: #f3f3f3;
 }
-
-.anti{
-    position:absolute;
-    top:20px;
-    left:10px;
+.btn-filtro{
+    width: 100px;
 }
-
-.primi{
-    position:absolute;
-    top:20px;
-    left:148px;
-}
-
-.secondi{
-    position:absolute;
-    top:20px;
-    left:250px;
-}
-
-.contorni{
-    position:absolute;
-    top:70px;
-    left:70px;
-}
-
-.dolci{
-    position:absolute;
-    top:70px;
-    left:200px;
-}
-
 .card{
-    width: 150px;
-    height: 160px;
-    left:10px;
-    top:-21px;
+    //width: 140px;
+    //height: 140px;
+    position: relative;
+    text-align: left;
+    background-color: #ffffff;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+.title-ricetta{
+    font-size: 16px;
 }
 
-.card1{
-    width: 150px;
-    height: 160px;
-    left:180px;
-    top:-220px;
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    //padding-inline-start: 40px;
+}
+
+#list{
+    background-color: #f3f3f3;
 }
