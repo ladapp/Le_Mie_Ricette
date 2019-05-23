@@ -22,6 +22,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -38,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+
   ],
   providers: [
     StatusBar,

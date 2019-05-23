@@ -1,28 +1,28 @@
 <ion-header>
     <ion-toolbar>
         <ion-menu-button class="menu"></ion-menu-button>
-      <ion-title class="title">Profilo</ion-title>
+      <ion-title class="title">{{ 'Profilo' | translate }}</ion-title>
     </ion-toolbar>
   </ion-header>
 
 <ion-content>
 
   <ion-icon name="md-contact" class="icon"></ion-icon>
-  <label class="nome" ><strong>Nome: </strong>Alessio</label> <br> <br> <br>
-  <label class="cognome"><strong>Cognome: </strong>Morgante</label> <br> <br> <br>
+  <label class="nome" ><strong>{{ 'Nome' | translate }}:</strong>Alessio</label> <br> <br> <br>
+  <label class="cognome"><strong>{{ 'Cognome' | translate }}:</strong>Morgante</label> <br> <br> <br>
   <label class="email"><strong>Email: </strong>blessiu997@gmail.com</label>
 
     <ion-tabs>
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="home">
             <ion-icon name="home"></ion-icon>
-            <ion-label>home</ion-label>
+            <ion-label>Home</ion-label>
             <ion-badge></ion-badge> 
           </ion-tab-button>
       
           <ion-tab-button tab="folder">
-            <ion-icon name="folder"></ion-icon>
-            <ion-label>Le mie ricette</ion-label>
+            <ion-icon name="folder">{{ 'Le mie ricette' | translate }}</ion-icon>
+            <ion-label></ion-label>
           </ion-tab-button>
 
           <ion-tab-button tab="add-circle">
@@ -32,12 +32,12 @@
       
           <ion-tab-button tab="restaurant">
             <ion-icon name="restaurant"></ion-icon>
-            <ion-label>Il mio frigo</ion-label>
+            <ion-label>{{ 'Il mio frigo' | translate }}</ion-label>
           </ion-tab-button>
       
           <ion-tab-button tab="build">
             <ion-icon name="build"></ion-icon>
-            <ion-label>Strumenti</ion-label>
+            <ion-label>{{ 'Strumenti' | translate }}</ion-label>
           </ion-tab-button>
         </ion-tab-bar>
       </ion-tabs>

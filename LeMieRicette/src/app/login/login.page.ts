@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+
+
 
 
 
@@ -28,7 +29,8 @@ export class LoginPage implements OnInit {
  }
 
   constructor(public router:Router,
-              public FormBuilder: FormBuilder) {
+              public FormBuilder: FormBuilder
+              ) {
    this.loginForm=this.FormBuilder.group({
      password: new FormControl('',Validators.compose([
       Validators.required,
@@ -38,12 +40,13 @@ export class LoginPage implements OnInit {
       Validators.required
      ]))
    });
+
     
   }
       
-  
  
   ngOnInit() {
+    
   }
 
   registrati(){
@@ -55,7 +58,7 @@ export class LoginPage implements OnInit {
   }
 
 
-  
+ 
 
 }
 

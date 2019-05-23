@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-cerca',
   templateUrl: './cerca.page.html',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CercaPage implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+
+    
   }
 
 }
