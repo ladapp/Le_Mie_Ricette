@@ -11,7 +11,7 @@
 
 <ion-content>
   <a (click)="dettaglio()">
-    <ion-card>
+    <ion-card class="card">
       <ion-card-header>
         <ion-img src="../assets/images/carbonara.jpg" ></ion-img>
         <ion-card-subtitle class="giorno">Ricetta del giorno</ion-card-subtitle>
@@ -31,7 +31,7 @@
   <ion-slides [options]="sliderConfig" scrollbar="true" page="true"> 
     <ion-slide>
       <a (click)="dettaglio()">
-        <ion-card>
+        <ion-card class="card">
           <ion-card-header>
             <ion-img src="../assets/images/carbonara.jpg" style="width: 200px; height: auto;"></ion-img>
             <ion-card-subtitle>Primo</ion-card-subtitle>
@@ -48,7 +48,7 @@
 
     <ion-slide>
       <a (click)="dettaglio()">
-        <ion-card>
+        <ion-card class="card">
           <ion-card-header>
             <ion-img src="../assets/images/pollo.jpg" style="width: 200px; height: auto;"></ion-img>
             <ion-card-subtitle>Secondo</ion-card-subtitle>
@@ -65,7 +65,7 @@
 
     <ion-slide>
       <a (click)="dettaglio()">
-        <ion-card>
+        <ion-card class="card">
           <ion-card-header>
             <ion-img src="../assets/images/insalata.jpg" style="width: 200px; height: auto;"></ion-img>
             <ion-card-subtitle>Contorno</ion-card-subtitle>
