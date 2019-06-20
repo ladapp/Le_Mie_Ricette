@@ -1,33 +1,24 @@
 .nome{
+    position: relative;
+    margin-top:20px;
     font-size:24px;
     margin-left:5px;
 }
 
-.tempo{
+.proprietà{
     font-size:16px;
     margin-left:5px;
 }
 
-.persone{
-    font-size:16px;
-    margin-left:5px;
-}
 
-.ingredienti{
+.principale{
     font-size:20px;
     position:relative;
-    left:130px;
+    text-align: center
 }
 
-.ricetta{
-    font-size:20px;
-    position:relative;
-    left:145px;
-}
 
 .textarea{
-    margin-top:5px;
-    margin-left:5px;
-    width: 352px;
+    width: 100%;
     height: 200px;
 }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicSelectableComponent } from 'ionic-selectable';
 import { Router } from '@angular/router';
+import { FormGroup, FormControl } from '@angular/forms';
+
+
 
 class Port {
   public id: number;
@@ -17,8 +20,11 @@ export class Nelmiofrigo1Page implements OnInit {
   ports: Port[];
   port: Port;
  
+  
+  
  
 constructor(public router:Router){  
+ 
   this.ports = [
     { id: 1, name: 'Piselli' },
     { id: 2, name: 'Zucchero' },
@@ -43,5 +49,8 @@ constructor(public router:Router){
   }) {
     console.log('ingrediente:', event.value);
   }
+
+
+  
 
 }

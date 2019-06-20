@@ -15,6 +15,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { IonicSelectableModule } from 'ionic-selectable';
+import {IonicStorageModule} from '@ionic/storage';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -31,7 +33,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     CommonModule,
+    IonicStorageModule.forRoot({
+      name:'_mydb',
+      driverOrder: ['indexeddb', 'sqlite', 'websql']
+    }),
     IonicSelectableModule,
     HttpClientModule,
     TranslateModule.forRoot({

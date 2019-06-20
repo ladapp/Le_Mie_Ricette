@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar>
-        <a (click)="back()"><ion-icon name="arrow-back" class="indietro"></ion-icon></a>
+      <ion-buttons slot="start"> <ion-back-button defaultHref="login"></ion-back-button> </ion-buttons>
         <ion-title class="title">Register</ion-title>
     </ion-toolbar>
 </ion-header>
@@ -8,7 +8,7 @@
  <form [formGroup]="registerForm">
 
   <ion-item no-padding class="animated fadeInUp" class="nome">
-    <ion-label position="floating">Nome</ion-label>
+    <ion-label position="floating">{{ 'Nome' | translate }}</ion-label>
     <ion-input  type="text" formControlName="nome"></ion-input>
   </ion-item>
 
@@ -21,7 +21,7 @@
     </div>
 
     <ion-item no-padding class="animated fadeInUp" class="cognome">
-        <ion-label position="floating">Cognome</ion-label>
+        <ion-label position="floating">{{ 'Cognome' | translate }}</ion-label>
         <ion-input  type="text" formControlName="cognome"></ion-input>
       </ion-item>
     

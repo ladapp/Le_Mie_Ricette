@@ -1,6 +1,8 @@
 <ion-header>
   <ion-toolbar>
-      <ion-menu-button class="menu"></ion-menu-button>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title class="title">Info</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -38,45 +40,3 @@
 </ion-text>
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar>
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <a href="#">
-          <ion-tab-button tab="home">
-            <ion-icon name="home"></ion-icon>
-              <ion-label>home</ion-label>
-              <ion-badge></ion-badge> 
-          </ion-tab-button>
-        </a>  
-        <a href="#">
-          <ion-tab-button tab="folder">
-            <ion-icon name="folder"></ion-icon>
-            <ion-label>Le mie ricette</ion-label>
-          </ion-tab-button>
-        </a>
-        
-        <a href="#">
-          <ion-tab-button tab="add-circle">
-            <ion-icon name="add-circle" style="color:red; font-size:60px"></ion-icon>
-            <ion-label></ion-label>
-          </ion-tab-button>
-        </a>
-          
-        <a href="#">
-          <ion-tab-button tab="restaurant">
-            <ion-icon name="restaurant"></ion-icon>
-            <ion-label>Nel mio frigo</ion-label>
-          </ion-tab-button>
-        </a>
-          
-        <a href="#">
-          <ion-tab-button tab="calculator">
-            <ion-icon name="calculator"></ion-icon>
-            <ion-label>Strumenti</ion-label>
-          </ion-tab-button>
-        </a>
-      </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
-</ion-footer>

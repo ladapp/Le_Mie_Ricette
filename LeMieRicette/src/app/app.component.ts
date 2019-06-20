@@ -49,17 +49,17 @@ export class AppComponent {
   }
 
   login(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['/login'])
     this.menu.close();
   }
 
   profilo(){
-    this.router.navigate(['/profilo']);
+    this.router.navigateByUrl('tabs/profilo')
     this.menu.close();
   }
 
   info(){
-    this.router.navigate(['/info']);
+    this.router.navigateByUrl('tabs/info')
     this.menu.close();
   }
 

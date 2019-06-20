@@ -1,7 +1,9 @@
 <ion-header>
   <ion-toolbar>
+        <ion-buttons slot="start"> 
+            <ion-back-button defaultHref="tabs/home"></ion-back-button> 
+        </ion-buttons>
       <ion-title class="title">Dettaglio Ricetta</ion-title>
-      <ion-icon name="arrow-back" id="arrow"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -13,11 +15,16 @@
 
     <label class="nome"><strong>Carbonara</strong></label><br>
 
-    <label class="persone"><strong>Per: </strong>2 persone</label> <br> 
+    <label class="proprietà"><strong>Tipo</strong>Primo</label><br>
 
-    <label class="tempo"><strong>Tempo: </strong>30 minuti</label> <br> <br>
+    <label class="proprietà"><strong>{{ 'Per' | translate }}:</strong>2 persone</label> <br> 
 
-    <span class="ingredienti"><strong>Ingredienti</strong></span><br>
+    <label class="proprietà"><strong>{{ 'Tempo' | translate }}:</strong>30 minuti</label> <br> <br>
+
+    <div class="principale">
+    <span class="ingredienti"><strong>{{ 'Ingredienti' | translate }}</strong></span>
+    </div><br>
+
     <ion-list style="margin-top:5px">
         <ion-item>
           <ion-label>Guanciale</ion-label>
@@ -30,43 +37,14 @@
         </ion-item>
     </ion-list><br>
 
+    <div class="principale">
+    <span><strong>{{ 'Ricetta' | translate }}</strong></span>
+    </div><br>
 
-    <span class="ricetta"><strong>Ricetta</strong></span><br>
+    
     <textarea readonly class="textarea"></textarea>
+    
     
     
 </div>
 </ion-content>
-<ion-footer>
-    <ion-toolbar>
-      <ion-tabs>
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="home">
-            <ion-icon name="home"></ion-icon>
-            <ion-label>home</ion-label>
-            <ion-badge></ion-badge> 
-          </ion-tab-button>
-              
-          <ion-tab-button tab="folder">
-            <ion-icon name="folder"></ion-icon>
-            <ion-label>Le mie ricette</ion-label>
-          </ion-tab-button>
-        
-          <ion-tab-button tab="add-circle">
-            <ion-icon name="add-circle" style="color:red;"></ion-icon>
-            <ion-label></ion-label>
-          </ion-tab-button>
-              
-          <ion-tab-button tab="restaurant">
-            <ion-icon name="restaurant"></ion-icon>
-            <ion-label>Nel mio frigo</ion-label>
-          </ion-tab-button>
-              
-          <ion-tab-button tab="calculator">
-            <ion-icon name="calculator"></ion-icon>
-            <ion-label>Strumenti</ion-label>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-    </ion-toolbar>
-  </ion-footer>

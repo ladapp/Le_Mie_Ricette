@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
-      <a (click)="back()"><ion-icon name="arrow-back" class="indietro"></ion-icon></a>
-    <ion-title class="title"> Nel Mio Frigo </ion-title>
+    <ion-buttons slot="start"> <ion-back-button defaultHref="tabs/home"></ion-back-button> </ion-buttons>
+    <ion-title class="title">{{ 'Nel mio frigo' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -25,10 +25,11 @@
         </ion-item>
     </ion-list><br>
 
- <form>
+ <form  ngSubmit="onSubmit()">
     <ion-item class="ingredienti">
-            <ion-label><strong>Aggiungi Ingredienti</strong></ion-label>
-            <ionic-selectable       
+            <ion-label class="label"><strong>{{ 'Aggiungi ingredienti' | translate }}</strong></ion-label>
+            <ion-input>
+            <ionic-selectable     
               [(ngModel)]="port"
               [items]="ports"
               [isMultiple]="true"
@@ -38,19 +39,17 @@
               (onChange)="portChange($event)"
               required="true">
             </ionic-selectable>
+          </ion-input>
     </ion-item>
 
-
-    <div class="centra">
-        <ion-button round outline type="submit" class="aggiungi">Aggiungi ingredienti</ion-button>
-    </div>
 
  </form>
 
  <div class="centra">
-    <ion-button round outline type="submit" class="vedi">Vedi le n ricette</ion-button>
+    <ion-button round outline type="submit">{{ 'Vedi le n ricette' | translate }}</ion-button>
  </div>
 
 
+ <ion-content>
+   
 
-</ion-content>

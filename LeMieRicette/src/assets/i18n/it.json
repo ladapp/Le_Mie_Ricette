@@ -4,6 +4,7 @@
     "Lingua": "Lingua",
     "Il mio frigo": "Il mio frigo",
     "Aggiungi ingrediente": "Aggiungi ingrediente",
+    "Aggiungi ingredienti": "Aggiungi ingredienti",
     "Aggiungi ricetta": "Aggiungi ricetta",
     "Per": "Per",
     "Nome ricetta": "Nome ricetta",
@@ -36,5 +37,9 @@
     "Accedi": "Accedi",
     "Inserisci": "Inserisci",
     "Seleziona": "Seleziona",
-    "Le mie ricette": "Le mie ricette"
+    "Le mie ricette": "Le mie ricette",
+    "Cerca": "Cerca",
+    "Convertitore di unità": "Convertitore di unità",
+    "Convertitore": "Convertitore",
+    "Chiudi": "Chiudi"
 }
