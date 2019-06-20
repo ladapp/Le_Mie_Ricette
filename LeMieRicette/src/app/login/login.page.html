@@ -39,7 +39,7 @@
         </ng-container>
       </div>
 
-    <ion-button color="danger" class="button-accedi" [disabled]="!loginForm.valid" (click)="login()" >Accedi </ion-button> <br>
+    <ion-button color="danger" class="button-accedi" [disabled]="!loginForm.valid" (click)="login()" >{{ 'Accedi' | translate }} </ion-button> <br>
 
     <ion-button color="danger" class="button-register" (click)="registrati()"> {{ 'Registrati' | translate }}</ion-button>
  </form>
