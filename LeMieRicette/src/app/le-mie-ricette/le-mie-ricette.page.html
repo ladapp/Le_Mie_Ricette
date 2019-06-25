@@ -11,12 +11,12 @@
   <ion-content>
     <!--lista di ricette-->
     <ion-list>
-      <ion-item>
+      <ion-item *ngFor="let ricetta of ricette$ | async">
         <ion-card>
             <ion-card-header>
               <ion-img src="../assets/images/carbonara.jpg"></ion-img>
               <ion-card-subtitle>Primo</ion-card-subtitle>
-              <ion-card-title>Carbonara</ion-card-title>
+              <ion-card-title>{{ricetta.nome | slice:0:20}}</ion-card-title>
             </ion-card-header>
         </ion-card> 
       </ion-item><br>

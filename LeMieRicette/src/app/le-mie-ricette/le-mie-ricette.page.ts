@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Observable} from 'rxjs';
+import {Ricetta} from '../model/ricetta.model';
+import {RicettaService} from '../services/ricetta.service';
 
 @Component({
   selector: 'app-le-mie-ricette',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeMieRicettePage implements OnInit {
 
-  constructor() { }
+  private ricette$: Observable<Ricetta[]>;
+
+  constructor(private ricettaService: RicettaService) { }
 
   ngOnInit() {
+    this.ricette$ = this.ricettaService.list();
   }
 
 }
