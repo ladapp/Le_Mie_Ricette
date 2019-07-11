@@ -32,7 +32,7 @@ const routes: Routes = [
       },
       {
         path:'strumenti',
-        loadChildren: '../nelmiofrigo1/nelmiofrigo1.module#Nelmiofrigo1PageModule'
+        loadChildren: '../strumenti/strumenti.module#StrumentiPageModule'
       },
       {
         path:'profilo',

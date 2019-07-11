@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Convertitore</ion-title>
+    <ion-button color="danger" (click)="dismiss()" class="close-modal">Chiudi</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p><ion-label><h1>Da <em>Kg</em> a <em>gr</em></h1></ion-label></p>
+  <ion-item>
+    <ion-label><p><em>Kg</em></p></ion-label>
+    <ion-input type="number" id="Ikg" #numero1 placeholder="0"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label><p><em>gr</em></p></ion-label>
+    <ion-input type="number" value="Readonly" readonly [(ngModel)]="result1" placeholder="0"></ion-input>
+  </ion-item>
+  <p><ion-button size="small" color="danger" (click)="convertKg(numero1.value)">Converti</ion-button></p>
+
+  <br>
+
+  <p><ion-label><h1>Da <em>gr</em> a <em>Kg</em></h1></ion-label></p>
+  <ion-item>
+    <ion-label><p><em>gr</em></p></ion-label>
+    <ion-input type="number" id="Igr" #numero2 placeholder="0"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label><p><em>Kg</em></p></ion-label>
+    <ion-input type="number" value="Readonly" readonly [(ngModel)]="result2" placeholder="0"></ion-input>
+  </ion-item>
+  <p><ion-button size="small" color="danger" (click)="convertgr(numero2.value)">Converti</ion-button></p>
+
+</ion-content>

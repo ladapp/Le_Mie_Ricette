@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'aggiungi-ricetta', loadChildren: './aggiungi-ricetta/aggiungi-ricetta.module#AggiungiRicettaPageModule' },
   { path: 'nelmiofrigo1', loadChildren: './nelmiofrigo1/nelmiofrigo1.module#Nelmiofrigo1PageModule' },
   { path: 'le-mie-ricette', loadChildren: './le-mie-ricette/le-mie-ricette.module#LeMieRicettePageModule' },
+  { path: 'strumenti', loadChildren: './strumenti/strumenti.module#StrumentiPageModule' },
   { path: 'ricette-dal-mio-frigo', loadChildren: './ricette-dal-mio-frigo/ricette-dal-mio-frigo.module#RicetteDalMioFrigoPageModule' },
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' }
 

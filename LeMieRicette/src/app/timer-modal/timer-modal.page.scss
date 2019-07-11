@@ -1,0 +1,25 @@
+.timer{ 
+    //height:400px;
+    width: 468px;
+    text-align: center;
+}
+
+.timer-scritta{
+    font-size:40px; 
+    color:red;
+    position:relative;
+}
+.avviso{
+    font-size:40px; 
+    color:red;
+    position:relative;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#go{
+    --background: #ff0000;
+    --background-activated: #ff5151;
+    width: 150px;
+}
