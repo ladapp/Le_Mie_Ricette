@@ -8,14 +8,14 @@ import {TranslateModule} from '@ngx-translate/core';
 import { IonicSelectableModule } from 'ionic-selectable';
 
 
-import { AggiungiRicettaPage } from './aggiungi-ricetta.page';
+import { AggiungiPage } from './aggiungi.page';
 
 
 
 const routes: Routes = [
   {
     path: '',
-    component: AggiungiRicettaPage
+    component: AggiungiPage
   }
 ];
 
@@ -29,6 +29,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [AggiungiRicettaPage]
+  declarations: [AggiungiPage]
 })
-export class AggiungiRicettaPageModule {}
+export class AggiungiPageModule {}

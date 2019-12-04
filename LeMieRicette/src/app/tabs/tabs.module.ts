@@ -22,10 +22,7 @@ const routes: Routes = [
         path:'le-mie-ricette',
         loadChildren: '../le-mie-ricette/le-mie-ricette.module#LeMieRicettePageModule'
       },
-      {
-        path:'aggiungi-ricetta',
-        loadChildren: '../aggiungi-ricetta/aggiungi-ricetta.module#AggiungiRicettaPageModule'
-      },
+      
       {
         path:'nelmiofrigo1',
         loadChildren: '../nelmiofrigo1/nelmiofrigo1.module#Nelmiofrigo1PageModule'
@@ -47,8 +44,8 @@ const routes: Routes = [
         loadChildren: '../cerca/cerca.module#CercaPageModule'
       },
       {
-        path:'aggiungi-ricetta',
-        loadChildren: '../aggiungi-ricetta/aggiungi-ricetta.module#Aggiungi-ricettaPageModule'
+        path:'aggiungi',
+        loadChildren: '../aggiungi/aggiungi.module#AggiungiPageModule'
       },
       {
         path:'ricette-dal-mio-frigo',

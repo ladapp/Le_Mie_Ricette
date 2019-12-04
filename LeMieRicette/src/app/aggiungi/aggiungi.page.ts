@@ -7,14 +7,14 @@ class Port {
   public name: string;
 }
 @Component({
-  selector: 'app-aggiungi-ricetta',
-  templateUrl: './aggiungi-ricetta.page.html',
-  styleUrls: ['./aggiungi-ricetta.page.scss'],
+  selector: 'app-aggiungi',
+  templateUrl: './aggiungi.page.html',
+  styleUrls: ['./aggiungi.page.scss'],
 })
 
 
 
-export class AggiungiRicettaPage implements OnInit {
+export class AggiungiPage implements OnInit {
   ports: Port[];
   port: Port;
  
